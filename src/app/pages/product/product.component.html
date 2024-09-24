@@ -1,0 +1,11 @@
+<a routerLink="..">back to products</a>
+
+<p>Chosen product</p>
+
+@let product = product$ | async ;
+@if (product) {
+  <article>
+    <h3>{{ product.name }}</h3>
+    <p>{{ product.description }}</p>
+  </article>
+}

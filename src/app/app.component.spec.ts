@@ -24,6 +24,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, static-site-generation-demo-ng');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Static Site Generation demo in Angular');
   });
 });

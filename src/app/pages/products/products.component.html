@@ -1,0 +1,8 @@
+<p>All products</p>
+
+@for (product of products$ | async; track product.id) {
+  <div>
+    {{ product.id }}, {{ product.name }}
+    <button [routerLink]="[product.id]">View</button>
+  </div>
+}
