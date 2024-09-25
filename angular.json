@@ -33,7 +33,7 @@
             "server": "src/main.server.ts",
             "prerender": {
               "routesFile": "routes.txt",
-              "discoverRoutes": false
+              "discoverRoutes": true
             },
             "ssr": false
           },
