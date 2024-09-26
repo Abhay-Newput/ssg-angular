@@ -5,14 +5,12 @@
     "ng": "ng",
     "start": "ng serve",
     "start:backend": "json-server --watch db.json",
-    "stop:backend": "lsof -t -i :3000 | xargs kill -9 ",
+    "stop:backend": "lsof -t -i :3000 | xargs kill -9",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "ssg:build": "npm run start:backend & npm run build && npm run stop:backend"
-  },
-  "stackblitz": {
-    "startCommand": "npm run ssg:build"
+    "ssg:build": "npm run start:backend & npm run build && npm run stop:backend",
+    "ssg:serve": "serve ./dist/static-site-generation-demo-ng/browser"
   },
   "private": true,
   "dependencies": {
@@ -39,6 +37,7 @@
     "@types/node": "^18.18.0",
     "jasmine-core": "~5.2.0",
     "json-server": "^0.17.0",
+    "serve": "^14.2.3",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
