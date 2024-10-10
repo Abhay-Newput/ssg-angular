@@ -9,7 +9,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "ssg:serve": "npm run start:backend & npm start"
+    "ssg:serve": "npm run start:backend & npm start",
+    "ssg:build": "npm run start:backend & npm run build"
   },
   "private": true,
   "dependencies": {
