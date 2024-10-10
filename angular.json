@@ -34,8 +34,7 @@
             "prerender": {
               "routesFile": "routes.txt",
               "discoverRoutes": true
-            },
-            "ssr": false
+            }
           },
           "configurations": {
             "production": {
